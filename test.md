@@ -3,13 +3,40 @@
 ## Short questions
 
 - What is a package? How do you define a package?
+```
+A package is a bunch of code, it's writen by someone else and it can be imported into our projeckt. It helps sorten development time.
+```
 - What is a constructor? When is it executed?
+```
+The constructor is a part of a class, this part of code runs when we create a new instance of an object, it defines specific values for the new instance.
+```
 - How do you implement inheritance in Java?
+```
+class newChild extend Parent;
+and in the constructor super() must be invoked.
+```
 - How do you prevent someone to inherit from a class?
+```
+
+```
 - What is a final variable? Where you can assign value to final variables?
+```
+The value of a Final variable can't be changed. It can be assigned only at declaration.
+```
 - Specify the available access modifiers in Java and briefly explain them
+```
+public It can be reached from outside of the object.
+private Only inside the object is accessible
+protected Only child objects can access.
+```
 - Briefly explain the mechanism of exception handling
+```
+When the given function throws an exeption, program does not crash, instead exeption will be catched be a handler, which handles the error as we describe it in the code.
+```
 - What is the difference between an abstract class and an interface?
+```
+An interface cannot be instantiated.
+```
 - What is the difference between Comparator and Comparable?
 - How Iterable and Iterator interface works? What methods need to exist in a
 class that implements them? What is their relation to for loops?
@@ -35,7 +62,11 @@ Example:
 
 ```java
 public boolean isPalindrom(String input) {
-
+    for (i = 0, i <= (input.length % 2), i++) {
+        if(!(input[i].isEqula(input[input.length-i-1]))
+            return = false;
+    }
+    return true;
 }
 
 isPalindrom("alma"); //false
@@ -54,7 +85,12 @@ Example:
 
 ```java
 public String findTheDuplicate(String[] input) {
-
+    for (i = 0, i < input.length-1, i++)
+        for (j = i+1, j <= input.length-1, j++) {
+            if(input[i].isEqual(input[]))
+                return input[i];
+        }
+    return null;
 }
 
 String[] fruitBasket = new String[] { "apple", "banana", "coconut", "durian",
@@ -78,7 +114,14 @@ Example:
 
 ```java
 public void countTheWords(String crazyLongString) {
-
+    inputArray[] = crazyLongString.split(" ");
+    HashMap<String, Number> = new HashMap<>;
+    for (i = 0, i < inputArray.size, i++)
+        if(HashMap has already a key with inputArray[i])
+            HashMap.updateValue with (value+1) where key = inputArray[i];
+        else
+            HashMap.put(inputArray[i], 0);
+    return HashMap.toString();
 }
 
 String boci = "Boci, boci tarka, se füle, se farka.";
@@ -132,6 +175,11 @@ public class Main {
         p.lastName = "Rambo";
     }
 }
+
+Output:
+5
+applebanana
+John Rambo
 
 ```
 
